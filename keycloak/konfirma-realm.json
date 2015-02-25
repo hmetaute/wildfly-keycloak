@@ -1,0 +1,336 @@
+{
+  "id" : "5a301668-3a1a-4bed-b74d-6157d213e37a",
+  "realm" : "konfirma",
+  "notBefore" : 1421696813,
+  "accessTokenLifespan" : 300,
+  "ssoSessionIdleTimeout" : 600,
+  "ssoSessionMaxLifespan" : 36000,
+  "accessCodeLifespan" : 60,
+  "accessCodeLifespanUserAction" : 300,
+  "enabled" : true,
+  "sslRequired" : "external",
+  "passwordCredentialGrantAllowed" : false,
+  "registrationAllowed" : true,
+  "rememberMe" : false,
+  "verifyEmail" : false,
+  "resetPasswordAllowed" : false,
+  "social" : true,
+  "updateProfileOnInitialSocialLogin" : false,
+  "bruteForceProtected" : false,
+  "maxFailureWaitSeconds" : 900,
+  "minimumQuickLoginWaitSeconds" : 60,
+  "waitIncrementSeconds" : 60,
+  "quickLoginCheckMilliSeconds" : 1000,
+  "maxDeltaTimeSeconds" : 43200,
+  "failureFactor" : 30,
+  "privateKey" : "MIICXAIBAAKBgQCS1q7z8y/4xKAxeJQI68CTf+Hf7e7t52Qm5T4wBAKjFI4ir8gn3KEj6ljelbFfP8lIFItwp5TBvxjqyqjyG1MwiNYYAzE96FDXykMVbKji3LsBiXFtaId47tTwNAydFmNAtlVp2fPtrwOCiUqu76GZQzVMZNRFcgZsu7W4oY5MhwIDAQABAoGAdQ4XIfm3QETevxE0UXg+aFcFpRFz6ssPF8KftH896usz84rVsJE9E/h5J9eFMj0TJBbcoc211E2We3VbAMWvpj+cezLjbkw+chW9DkHTzxQ5mjAm931Qk7A7/fnEFq89I/k51TsTnoXWF62d82MfOZRSwjs7iXC/3BgKZGXj/IECQQD01c1flPcTFHTRuZ3tMOHNo08dPRbQuQMtO39cSCtwtyM9fomWYexiIsI02LHr50nmNJKDS56TAdDsXcFH4i33AkEAmYjfXpq48pz3NREo8fvAzxMUPUaMeRKlBz2uSAIkwiID18FDsSbSlefg3is56FVTXS12DddsG6KuZDw1waFx8QJBAI34E/iitopXyE18ZnkNaUIGum9n5vzs60ylPXrTVm0rpMGZyEptSda19QsTxEfYe9+DCJodlTwFR5Jn4xW9r40CQCwZbE84Ebdd7oOHkkMvFIpl6IJRKTf9avlRdiWot/Yq3v+xu0e+5u231Jb7w35AQ9mXnTkMjzjA2WZhBO/A94ECQA/OVcsDS3YiDy7iX6lH6r+07Wo/zsDzvL+nAZs02ZwmL5yapjG19E2zi3sS5spfF+ty6ISoKR4zJ8LKd8GHF3I=",
+  "publicKey" : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCS1q7z8y/4xKAxeJQI68CTf+Hf7e7t52Qm5T4wBAKjFI4ir8gn3KEj6ljelbFfP8lIFItwp5TBvxjqyqjyG1MwiNYYAzE96FDXykMVbKji3LsBiXFtaId47tTwNAydFmNAtlVp2fPtrwOCiUqu76GZQzVMZNRFcgZsu7W4oY5MhwIDAQAB",
+  "roles" : {
+    "realm" : [ {
+      "id" : "3b186e4e-c078-4652-8af4-47505ee1c02e",
+      "name" : "admin",
+      "description" : "Usuario administrador de la aplicacion",
+      "composite" : false
+    }, {
+      "id" : "86f4d917-af9c-4ca0-87e4-0f33a62230be",
+      "name" : "user",
+      "description" : "usuario plano de la aplicacion",
+      "composite" : false
+    } ],
+    "application" : {
+      "security-admin-console" : [ ],
+      "konfirma" : [ ],
+      "account" : [ {
+        "id" : "1d086f99-4d22-4cc9-b578-58f616e540b6",
+        "name" : "manage-account",
+        "composite" : false
+      }, {
+        "id" : "bbed86fe-cae2-4f6b-bc46-b1b7f60e27d5",
+        "name" : "view-profile",
+        "composite" : false
+      } ],
+      "realm-management" : [ {
+        "id" : "8ee35b60-7ee5-4651-bb8c-3c6480170a53",
+        "name" : "view-users",
+        "composite" : false
+      }, {
+        "id" : "5cbd718a-1a0e-4310-939f-6c6e4830bf3f",
+        "name" : "manage-clients",
+        "composite" : false
+      }, {
+        "id" : "b2b8dd36-0194-44e2-9b3d-da614566e8c7",
+        "name" : "manage-applications",
+        "composite" : false
+      }, {
+        "id" : "be9cf88b-6547-40fc-9ac3-20f60ecbf85c",
+        "name" : "manage-users",
+        "composite" : false
+      }, {
+        "id" : "7d757c30-59ee-45db-9908-4c84e627d7bd",
+        "name" : "view-applications",
+        "composite" : false
+      }, {
+        "id" : "cc2a3ca2-eb44-4592-9d4f-9706c21afc34",
+        "name" : "view-events",
+        "composite" : false
+      }, {
+        "id" : "be0b0024-fdc0-4816-b342-3b2f711e7ecc",
+        "name" : "manage-realm",
+        "composite" : false
+      }, {
+        "id" : "28e18a0f-3cc0-4b81-a3ba-eba9f2c85bfe",
+        "name" : "view-clients",
+        "composite" : false
+      }, {
+        "id" : "129657da-568d-424e-b762-cf1380b52a27",
+        "name" : "realm-admin",
+        "composite" : true,
+        "composites" : {
+          "application" : {
+            "realm-management" : [ "manage-clients", "view-users", "manage-applications", "manage-users", "view-applications", "view-events", "manage-realm", "view-clients", "view-realm", "manage-events" ]
+          }
+        }
+      }, {
+        "id" : "f5b05b11-5726-436e-bea4-5929d7fd6d51",
+        "name" : "view-realm",
+        "composite" : false
+      }, {
+        "id" : "756ba5d0-485d-410a-990c-9df034798adc",
+        "name" : "manage-events",
+        "composite" : false
+      } ]
+    }
+  },
+  "defaultRoles" : [ "user" ],
+  "requiredCredentials" : [ "password" ],
+  "users" : [ {
+    "id" : "2057b048-06e7-4559-8db1-e1ef764825e0",
+    "username" : "706ad34d-2045-4649-b391-08eec3795bb6",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Konfirma",
+    "lastName" : "Sinko",
+    "email" : "konfirma.sinko@gmail.com",
+    "credentials" : [ ],
+    "requiredActions" : [ ],
+    "socialLinks" : [ {
+      "socialProvider" : "google",
+      "socialUserId" : "110479017220246126346",
+      "socialUsername" : "konfirma.sinko@gmail.com"
+    } ],
+    "realmRoles" : [ "user" ],
+    "applicationRoles" : {
+      "account" : [ "manage-account", "view-profile" ]
+    }
+  }, {
+    "id" : "0f3f6695-2ad5-4c17-9f40-0ba1020d2a4a",
+    "username" : "eb9868f4-1538-436c-9c7a-a014150ce98c",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Hernan",
+    "lastName" : "Metaute",
+    "email" : "hernan.metaute@gmail.com",
+    "credentials" : [ ],
+    "requiredActions" : [ ],
+    "socialLinks" : [ {
+      "socialProvider" : "google",
+      "socialUserId" : "114543444944718222057",
+      "socialUsername" : "hernan.metaute@gmail.com"
+    } ],
+    "realmRoles" : [ "user" ],
+    "applicationRoles" : {
+      "account" : [ "manage-account", "view-profile" ]
+    }
+  }, {
+    "id" : "f8361d55-d933-489d-aa64-14809c36aa5f",
+    "username" : "eduardo.gomez@ceiba.com.co",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "William",
+    "lastName" : "Gomez",
+    "email" : "eduardo.gomez@ceiba.com.co",
+    "credentials" : [ {
+      "type" : "password",
+      "hashedSaltedValue" : "2rh1MFfqdT1V9x7BR7otakUdFWIzq/cUqEFLq2X4A/qOXLZRPV9Vki60sgRc8oYY2QtHf8/AeXlfN9DQrUho7g==",
+      "salt" : "tXPX4GHuQH6+BT+uVIBSbA==",
+      "hashIterations" : 1,
+      "temporary" : false
+    } ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "user" ],
+    "applicationRoles" : {
+      "account" : [ "manage-account", "view-profile" ]
+    }
+  }, {
+    "id" : "744f87f3-2029-4510-b06c-87739e41d8a9",
+    "username" : "hernan.metaute@ceiba.com.co",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Hernan",
+    "lastName" : "Metaute",
+    "email" : "hernan.metaute@ceiba.com.co",
+    "credentials" : [ {
+      "type" : "password",
+      "hashedSaltedValue" : "rUG8aCh5Q8j/KlbjebUadEacZSRRTqw6slN5dRF9imNP3XxpNgxFSHr7eNb0qhvWtWIlRZoZy/mtwb8aPIOEcg==",
+      "salt" : "h8ZMR3meUTD8IOn5AnjZbQ==",
+      "hashIterations" : 1,
+      "temporary" : false
+    } ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "admin" ],
+    "applicationRoles" : {
+      "account" : [ "manage-account", "view-profile" ]
+    }
+  }, {
+    "id" : "7eb44d01-4fbe-44f5-a4b6-8fab5340aa1b",
+    "username" : "ruth.sanchez@ceiba.com.co",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "ruth",
+    "lastName" : "sanchez",
+    "email" : "ruth.sanchez@ceiba.com.co",
+    "credentials" : [ {
+      "type" : "password",
+      "hashedSaltedValue" : "PaftonB+VVSklORDlyal1xGV5sT+TUpnW5062FOnRh5FUeamkur7KDhyzZpDOO4nK+gd7KbNRnEiclpgSYOpDg==",
+      "salt" : "eIMF0hApZ8bO6jfNrl7jNQ==",
+      "hashIterations" : 1,
+      "temporary" : false
+    } ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "user" ],
+    "applicationRoles" : {
+      "account" : [ "manage-account", "view-profile" ]
+    }
+  } ],
+  "applicationScopeMappings" : {
+    "realm-management" : [ {
+      "client" : "security-admin-console",
+      "roles" : [ "realm-admin" ]
+    } ]
+  },
+  "applications" : [ {
+    "id" : "f52609d3-5024-45d4-9fc2-02272a79e55e",
+    "name" : "security-admin-console",
+    "baseUrl" : "/auth/admin/konfirma/console/index.html",
+    "surrogateAuthRequired" : false,
+    "enabled" : true,
+    "secret" : "7298aa15-b0b7-43a0-93a9-a7d67c22b49d",
+    "redirectUris" : [ "/auth/admin/konfirma/console/*" ],
+    "webOrigins" : [ ],
+    "claims" : {
+      "name" : true,
+      "username" : true,
+      "profile" : true,
+      "picture" : true,
+      "website" : true,
+      "email" : true,
+      "gender" : true,
+      "locale" : true,
+      "address" : true,
+      "phone" : true
+    },
+    "notBefore" : 0,
+    "bearerOnly" : false,
+    "publicClient" : true,
+    "fullScopeAllowed" : false
+  }, {
+    "id" : "4cb4953b-2db8-49f5-a40b-55eee9329bb4",
+    "name" : "konfirma",
+    "adminUrl" : "/SinkoWeb/",
+    "baseUrl" : "/SinkoWeb/",
+    "surrogateAuthRequired" : false,
+    "enabled" : true,
+    "secret" : "d56fffaf-bfb5-4c00-bd6c-c1a3924d14a9",
+    "redirectUris" : [ "/SinkoWeb/*" ],
+    "webOrigins" : [ ],
+    "claims" : {
+      "name" : true,
+      "username" : true,
+      "profile" : true,
+      "picture" : true,
+      "website" : true,
+      "email" : true,
+      "gender" : true,
+      "locale" : true,
+      "address" : true,
+      "phone" : true
+    },
+    "notBefore" : 0,
+    "bearerOnly" : false,
+    "publicClient" : false,
+    "fullScopeAllowed" : true
+  }, {
+    "id" : "1322c736-68f5-4868-a0f7-2f97ffea39e1",
+    "name" : "account",
+    "baseUrl" : "/auth/realms/konfirma/account",
+    "surrogateAuthRequired" : false,
+    "enabled" : true,
+    "secret" : "17ca4975-d334-4e7e-8aa7-71f66e3a83e1",
+    "defaultRoles" : [ "view-profile", "manage-account" ],
+    "redirectUris" : [ "/auth/realms/konfirma/account/*" ],
+    "webOrigins" : [ ],
+    "claims" : {
+      "name" : true,
+      "username" : true,
+      "profile" : true,
+      "picture" : true,
+      "website" : true,
+      "email" : true,
+      "gender" : true,
+      "locale" : true,
+      "address" : true,
+      "phone" : true
+    },
+    "notBefore" : 0,
+    "bearerOnly" : false,
+    "publicClient" : false,
+    "fullScopeAllowed" : false
+  }, {
+    "id" : "af294a41-b0bf-48a5-8bd4-d3c3f5a9383f",
+    "name" : "realm-management",
+    "surrogateAuthRequired" : false,
+    "enabled" : true,
+    "secret" : "94476e5e-c936-40ad-b453-5c1a30c0c387",
+    "redirectUris" : [ ],
+    "webOrigins" : [ ],
+    "claims" : {
+      "name" : true,
+      "username" : true,
+      "profile" : true,
+      "picture" : true,
+      "website" : true,
+      "email" : true,
+      "gender" : true,
+      "locale" : true,
+      "address" : true,
+      "phone" : true
+    },
+    "notBefore" : 0,
+    "bearerOnly" : true,
+    "publicClient" : false,
+    "fullScopeAllowed" : false
+  } ],
+  "oauthClients" : [ ],
+  "browserSecurityHeaders" : {
+    "contentSecurityPolicy" : "frame-src 'self'",
+    "xFrameOptions" : "SAMEORIGIN"
+  },
+  "socialProviders" : {
+    "google.key" : "812408490618-mdj37p5qnje0vetoi6d0dg45ch8ulsht.apps.googleusercontent.com",
+    "google.secret" : "cUnhLbSIq6E02NmYhNCEjP_h"
+  },
+  "smtpServer" : {
+    "port" : "25",
+    "host" : "mail.ceiba.com.co",
+    "from" : "no-reply@ceiba.com.co",
+    "auth" : "false"
+  },
+  "eventsEnabled" : false,
+  "eventsExpiration" : 0,
+  "eventsListeners" : [ ]
+}
