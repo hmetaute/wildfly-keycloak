@@ -29,6 +29,7 @@
         <extension module="org.wildfly.extension.batch"/>
         <extension module="org.wildfly.extension.io"/>
         <extension module="org.wildfly.extension.undertow"/>
+	<extension module="org.keycloak.keycloak-subsystem"/>
     </extensions>
     <system-properties>
         <!-- IPv4 is not required, but setting this helps avoid unintended use of IPv6 -->
@@ -278,6 +279,12 @@
                             <policy-module code="Delegating" flag="required"/>
                         </authorization>
                     </security-domain>
+		    <security-domain name="keycloak">
+		      <authentication>
+			<login-module code="org.keycloak.adapters.jboss.KeycloakLoginModule"
+				      flag="required"/>
+		      </authentication>
+		    </security-domain>
                 </security-domains>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:transactions:2.0">
@@ -321,6 +328,7 @@
                 <client-config name="Standard-Client-Config"/>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:weld:2.0"/>
+	    <subsystem xmlns="urn:jboss:domain:keycloak:1.0"/>
         </profile>
         <profile name="ha">
             <subsystem xmlns="urn:jboss:domain:logging:2.0">
