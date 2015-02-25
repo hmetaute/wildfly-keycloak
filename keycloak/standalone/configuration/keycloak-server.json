@@ -1,37 +1,30 @@
 {
-    "providers": [
-        "classpath:${jboss.server.config.dir}/providers/*"
-    ],
-
-    "admin": {
-        "realm": "master"
-    },
 
     "eventsStore": {
-        "provider": "jpa",
-        "jpa": {
+	"provider": "mongo",
+	"mongo": {
             "exclude-events": [ "REFRESH_TOKEN" ]
-        }
+	}
     },
 
     "realm": {
-        "provider": "jpa"
+	"provider": "mongo"
     },
 
     "user": {
-        "provider": "jpa"
+	"provider": "mongo"
     },
 
     "userSessions": {
-        "provider" : "mem"
+        "provider" : "${keycloak.userSessions.provider:mem}"
     },
 
     "realmCache": {
-        "provider": "mem"
+        "provider": "${keycloak.realm.cache.provider:mem}"
     },
 
     "userCache": {
-        "provider": "mem",
+        "provider": "${keycloak.user.cache.provider:mem}",
         "mem": {
             "maxSize": 20000
         }
@@ -67,10 +60,12 @@
         "interval": 900
     },
 
-    "connectionsJpa": {
-        "default": {
-            "dataSource": "java:jboss/datasources/KeycloakDS",
-            "databaseSchema": "update"
-        }
+    "connectionsMongo": {
+	"default": {
+            "host": "127.0.0.1",
+            "port": "27017",
+            "db": "sinko"
+	}
     }
+
 }
